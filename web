@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam & Gleam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd; /* Soft white background */
+        }
+        header, footer {
+      background-image: repeating-linear-gradient(
+        45deg,
+        #11072a,
+        #424edb 10px,
+        
+        #11072a 10px,
+        #42499d 20px
+      );
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-image: repeating-linear-gradient(
+        45deg,
+        #11072a,
+        #424ba8 10px,
+        #11072a 10px,
+        #424edb 20px
+      );
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #ccaaf3; /* Lighter purple on hover */
+        }
+        .hero {
+            background: url('https://i.pinimg.com/originals/d6/6a/d1/d66ad1a0ce0fc09370424075125b06b7.gif') no-repeat center center / cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero h2 {
+            background: rgba(92, 21, 199, 0.7); /* Semi-transparent dark purple background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+        }
+        .faq, .reviews {
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .faq h2, .reviews h2 {
+            text-align: center;
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px; /* Icon size */
+        }
+        .social-icons a:hover {
+            color: #ccaaf3; /* Lighter purple on hover */
+        }
+        .footer-links {
+            margin: 10px 0;
+        }
+        .review-section {
+            margin-top: 40px;
+        }
+        .review-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .review-card img {
+            max-width: 70px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media (max-width: 768px) {
+            .card, .review-card {
+                flex: 1 1 calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Glam and Gleam</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#shop">Shop with Us</a>
+    <a href="#faq">FAQ</a>
+    <a href="#reviews">Reviews</a>
+</nav>
+
+<section class="hero">
+</section>
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Glam & Gleam, we believe in the beauty and power of natural gemstones. Our passion for quality craftsmanship and unique designs drives us to create exquisite accessories that you will cherish for years to come.</p>
+</section>
+
+<section id="shop" class="cards">
+    <div class="card">
+        <img src="https://jonnajintonsweden.com/wp-content/uploads/2024/10/butterfly-necklace-jonnajinton-jewelry-1-L.jpg" alt="Amethyst Necklace">
+        <h3>Amethyst Necklace</h3>
+        <p>$50</p>
+    </div>
+    <div class="card">
+        <img src="https://i.etsystatic.com/6374506/r/il/059df2/2115139451/il_570xN.2115139451_lnnv.jpg" alt="Quartz Earrings">
+        <h3>Quartz Earrings</h3>
+        <p>$25</p>
+    </div>
+    <div class="card">
+        <img src="https://penfine.com/cdn/shop/products/il_fullxfull.5574057717_7h9i.jpg?v=1706341686&width=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" alt="Ruby Ring">
+        <h3>Ruby Ring</h3>
+        <p>$70</p>
+    </div>
+    <div class="card">
+        <img src="https://www.ainwear.in/cdn/shop/files/266851F2-03ED-48DA-A9E1-C3A488DF5705.jpg?v=1716727668&width=1946" alt="Sapphire Pendant">
+        <h3>Sapphire Pendant</h3>
+        <p>$55</p>
+    </div>
+    <div class="card">
+        <img src="https://www.giftstopakistan.com/wp-content/uploads/2023/05/charm-bracelet-set.jpg?v=1716727668&width=1946" alt="Sapphire Pendant">
+        <h3>Bracelet</h3>
+        <p>$67</p>
+    </div>
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/15/0f/5f/150f5f017585b2ce70eacd024ac1e056.jpg?v=1716727668&width=1946" alt="Sapphire Pendant">
+        <h3>Rose Gold</h3>
+        <p>$40</p>
+    </div>
+</section>
+
+<section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p>Q1: What types of accessories do you offer?</p>
+    <p>A1: We offer a variety of natural gemstones including amethyst, turquoise, and more.</p>
+    <p>Q2: How can I contact customer service?</p>
+    <p>A2: You can reach us via email at support@gemstones.com.</p>
+</section>
+
+<div class="review-section" id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+        <div class="review-card">
+            <img src="https://pm1.aminoapps.com/7308/dec5c884cc72c2c36a32a5bf92b77e39036faab6r1-500-500v2_00.jpg" alt="Marry Hendriks">
+            <h4>Marry Hendriks</h4>
+            <p>Great quality! Highly recommend.</p>
+        </div>
+        <div class="review-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61M4lwRdqHL._UL500_.jpg" alt="Reena Moths">
+            <h4>Reena Moths</h4>
+            <p>Love my new accessory! Perfect.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="mailto:info@gemstones.com">Email Us</a>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p><span>📍</span> Location: 123 Gemstone St, Crystal City</p>
+    </div>
+    <p>&copy; 2025 Glam & Gleam. All rights reserved.</p>
+    <p><a href="#">Terms and Conditions</a></p>
+</footer>
+
+</body>
+</html>
